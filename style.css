@@ -1,0 +1,94 @@
+#container{
+    width: 100%;
+    min-height: 100vh;
+    background: #873b8775;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+}
+#Currency{
+    background: #97dae1c4;
+    width: 500px;
+    min-height: 400px;
+    margin: 20px;
+    border: 2px double #000;
+    border-radius: 30px;
+    position: relative;
+
+}
+
+#icon{
+    position: relative;
+    top: 10px;
+    left: 50px;
+    transform: translateX(-50%);
+}
+#icon img {
+    width: 80px; 
+    height: 80px;
+}
+
+#exchangeicon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+}
+
+#exchangeicon img {
+    width: 60px; 
+    height: 60px;
+    margin-top: 20px; 
+}
+#country1{
+    margin-left:25%;
+    height: 50%;  
+    width: 270px;
+    margin-top: 30px;
+    text-align: center;
+    border-radius: 10px;
+    height: 30px;
+}
+#country2{
+    margin-left: 25%;
+    height: 50%;
+    width: 270px;
+    margin-top: 20px; 
+    text-align: center; 
+    border-radius: 10px;
+    height: 30px;
+}
+
+#output {
+    width: 50%;
+    background: #000000;
+    color: rgb(255, 255, 255);
+    margin-top: 30px;
+    margin-left: 25%;
+    padding: 10px;
+    height: 15px;
+    border-radius: 10px;
+    border: 2px solid #000;
+    text-align: center;
+}
+#button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    padding: 10px 12px;
+    border-radius: 10px;
+    background-color: #000;
+    color: white;
+    margin-left: 42%;
+    margin-top: 5%;
+}
+
+#button img {
+    width: 25px; 
+    height: 25px;
+}
