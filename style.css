@@ -10,19 +10,18 @@
 }
 #Currency{
     background: #97dae1c4;
-    width: 500px;
+    width: 38%;
     min-height: 400px;
-    margin: 20px;
+    margin: 2%;
     border: 2px double #000;
     border-radius: 30px;
     position: relative;
 
 }
-
 #icon{
     position: relative;
-    top: 10px;
-    left: 50px;
+    top: 10%;
+    left: 3%;
     transform: translateX(-50%);
 }
 #icon img {
