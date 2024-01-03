@@ -1,32 +1,41 @@
-#container{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container {
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
     background: #873b8775;
     display: flex;
-    align-items: center;
     justify-content: center;
-    position: relative;
     flex-direction: column;
 }
-#Currency{
+
+#Currency {
     background: #97dae1c4;
-    width: 38%;
-    min-height: 400px;
-    margin: 2%;
+    width: 80%;
+    max-width: 500px;
+    height: auto;
+    margin: 0 auto;
+    padding: 25px;
     border: 2px double #000;
     border-radius: 30px;
     position: relative;
+}
 
+#icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
 }
-#icon{
-    position: relative;
-    top: 10%;
-    left: 3%;
-    transform: translateX(-50%);
-}
+
 #icon img {
-    width: 80px; 
-    height: 80px;
+    width: 100px;
+    height: 100px;
+    margin: 10px auto;
 }
 
 #exchangeicon {
@@ -37,41 +46,37 @@
 }
 
 #exchangeicon img {
-    width: 60px; 
+    width: 60px;
     height: 60px;
-    margin-top: 20px; 
 }
-#country1{
-    margin-left:25%;
-    height: 50%;  
-    width: 270px;
-    margin-top: 30px;
+
+#country1,
+#country2 {
+    width: 80%;
+    max-width: 300px;
+    /* margin-left: 10%;
+    margin-top: 20px; */
+    margin: 10px auto;
+    display: block;
     text-align: center;
-    border-radius: 10px;
-    height: 30px;
-}
-#country2{
-    margin-left: 25%;
-    height: 50%;
-    width: 270px;
-    margin-top: 20px; 
-    text-align: center; 
     border-radius: 10px;
     height: 30px;
 }
 
 #output {
-    width: 50%;
+    width: 80%;
+    max-width: 500px;
     background: #000000;
     color: rgb(255, 255, 255);
-    margin-top: 30px;
-    margin-left: 25%;
+    margin-top: 20px;
+    margin-left: 10%;
     padding: 10px;
-    height: 15px;
+    height: auto;
     border-radius: 10px;
     border: 2px solid #000;
     text-align: center;
 }
+
 #button {
     display: flex;
     align-items: center;
@@ -83,11 +88,30 @@
     border-radius: 10px;
     background-color: #000;
     color: white;
-    margin-left: 42%;
+    margin-left: 50%;
+    transform: translateX(-50%);
     margin-top: 5%;
 }
 
 #button img {
-    width: 25px; 
+    width: 25px;
     height: 25px;
+}
+
+@media (max-width: 600px) {
+    #Currency {
+        width: 90%;
+    }
+
+    #country1,
+    #country2,
+    #output {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    #button {
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
 }
